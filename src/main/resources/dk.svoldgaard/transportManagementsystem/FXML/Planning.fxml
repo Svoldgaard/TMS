@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.svoldgaard.transportmanagementsystem.GUI.Controller.PlanningController">
+   <bottom>
+       <HBox prefHeight="250.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <TableView fx:id="tblTruckTrailer" prefHeight="250.0" prefWidth="221.0">
+               <columns>
+                   <TableColumn prefWidth="75.0" text="truck" />
+                   <TableColumn prefWidth="75.0" text="Trailer" />
+               </columns>
+           </TableView>
+           <TableView fx:id="tblCurrentTureselected" prefHeight="250.0" prefWidth="807.0">
+               <columns>
+                   <TableColumn prefWidth="75.0" text="Booking Number" />
+                   <TableColumn prefWidth="75.0" text="Clint" />
+                   <TableColumn prefWidth="48.0" text="Loading Place" />
+                   <TableColumn prefWidth="50.0" text="Loading day" />
+                   <TableColumn prefWidth="72.0" text="Delivery place" />
+                   <TableColumn prefWidth="68.0" text="delivery date" />
+                   <TableColumn prefWidth="63.0" text="zip" />
+                   <TableColumn prefWidth="35.46185302734375" text="country" />
+                   <TableColumn prefWidth="62.842529296875" text="weight" />
+               <TableColumn prefWidth="75.0" text="PLL" />
+               <TableColumn prefWidth="37.1976318359375" text="LDM" />
+               <TableColumn prefWidth="112.80242919921875" text="Price" />
+               </columns>
+           </TableView>
+         <ListView fx:id="lstCurrentTurs" prefHeight="250.0" prefWidth="279.0" />
+       </HBox>
+   </bottom>
+   <top>
+       <HBox prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <Button mnemonicParsing="false" onAction="#btnBooking" text="Booking" />
+           <Button mnemonicParsing="false" onAction="#btnCMR" text="CMR" />
+           <Button mnemonicParsing="false" onAction="#btnLogOut" text="LogOut">
+              <HBox.margin>
+                  <Insets left="930.0" />
+              </HBox.margin>
+           </Button>
+       </HBox>
+   </top>
+   <center>
+      <TableView fx:id="tblBooking" prefHeight="500.0" prefWidth="1089.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colBookingNr" prefWidth="75.0" text="Booking number" />
+          <TableColumn fx:id="colClint" prefWidth="75.0" text="Clint" />
+            <TableColumn fx:id="colLoadingPlace" prefWidth="75.0" text="Loading place" />
+            <TableColumn fx:id="colLoadingDate" prefWidth="75.0" text="Loading date" />
+            <TableColumn fx:id="colLoadingZip" prefWidth="75.0" text="zip" />
+            <TableColumn fx:id="colLoadingContryCode" prefWidth="75.0" text="Contry" />
+            <TableColumn fx:id="colDeliveryPlace" prefWidth="75.0" text="delivery place" />
+            <TableColumn fx:id="colDeliveryDate" prefWidth="75.0" text="delivery day" />
+            <TableColumn fx:id="colDeliberyZip" prefWidth="57.0" text="zip" />
+            <TableColumn fx:id="colDeliveryContryCode" prefWidth="60.0" text="contry" />
+            <TableColumn fx:id="colWeight" prefWidth="108.0" text="weight" />
+            <TableColumn fx:id="colColliAmount" prefWidth="34.0" text="pll" />
+            <TableColumn fx:id="colLoadingMeter" prefWidth="75.0" text="LDM" />
+            <TableColumn fx:id="colPrice" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
