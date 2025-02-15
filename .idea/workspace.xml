@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e17e5c0-f777-4d37-a8bb-f0cd562b9f47" name="Changes" comment="most off GUI and some mockdata in first TableVIew">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/BE/TruckTrailer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/DLL/DBConnection/DBConnection.java" afterDir="false" />
+    <list default="true" id="8e17e5c0-f777-4d37-a8bb-f0cd562b9f47" name="Changes" comment="add some more be classes because it is needed for the other tableView in Planning Window">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/BE/Trip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Controller/PlanningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Controller/PlanningController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Model/PlanningModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Model/PlanningModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dk.svoldgaard/transportManagementsystem/FXML/Planning.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dk.svoldgaard/transportManagementsystem/FXML/Planning.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,7 @@
       <workItem from="1738155631328" duration="2582000" />
       <workItem from="1739562249560" duration="3544000" />
       <workItem from="1739642603421" duration="1244000" />
-      <workItem from="1739651840285" duration="1839000" />
+      <workItem from="1739651840285" duration="2517000" />
     </task>
     <task id="LOCAL-00001" summary="most off GUI and some mockdata in first TableVIew">
       <option name="closed" value="true" />
@@ -128,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739565645553</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add some more be classes because it is needed for the other tableView in Planning Window">
+      <option name="closed" value="true" />
+      <created>1739654045448</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739654045448</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="most off GUI and some mockdata in first TableVIew" />
-    <option name="LAST_COMMIT_MESSAGE" value="most off GUI and some mockdata in first TableVIew" />
+    <MESSAGE value="add some more be classes because it is needed for the other tableView in Planning Window" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some more be classes because it is needed for the other tableView in Planning Window" />
   </component>
 </project>

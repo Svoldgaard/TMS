@@ -1,7 +1,13 @@
 package dk.svoldgaard.transportmanagementsystem.GUI.Controller;
 
+
+// project import
 import dk.svoldgaard.transportmanagementsystem.BE.Booking;
+import dk.svoldgaard.transportmanagementsystem.BE.Trip;
 import dk.svoldgaard.transportmanagementsystem.GUI.Model.PlanningModel;
+
+
+// jave import
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -23,7 +29,7 @@ public class PlanningController implements Initializable {
 
     // all regarding current tures
     @FXML
-    private ListView lstCurrentTurs;
+    private ListView<Trip> lstCurrentTurs;
 
     // this is all regarding tblBooking
     @FXML
@@ -128,6 +134,7 @@ public class PlanningController implements Initializable {
         colPlanedClint.setCellValueFactory(new PropertyValueFactory<>("client"));
         colPlanedLoadingPlace.setCellValueFactory(new PropertyValueFactory<>("loadingPlace"));
         colPlanedLoadingday.setCellValueFactory(new PropertyValueFactory<>("loadingDate"));
+        colPlanedZip.setCellValueFactory(new PropertyValueFactory<>("loadingZipCode"));
         colPlanedDeliveryPlace.setCellValueFactory(new PropertyValueFactory<>("deliveryPlace"));
         colPlanedDeliveryDate.setCellValueFactory(new PropertyValueFactory<>("deliveryDate"));
         colPlanedDeliveryZip.setCellValueFactory(new PropertyValueFactory<>("deliveryZipCode"));
@@ -145,6 +152,9 @@ public class PlanningController implements Initializable {
         colTrailer.setCellValueFactory(new PropertyValueFactory<>("trailerPlate"));
 
         tblTruckTrailer.setItems(planningModel.getTruckTrailer());
+
+        // trips
+        lstCurrentTurs.setItems(planningModel.getCurrentTurs());
 
     }
     @FXML
