@@ -19,13 +19,17 @@ public class PlanningModel {
     private ObservableList<TruckTrailer> tblTruckTrailer;
     private ObservableList<Trip> lstCurrentTurs;
 
-
     public PlanningModel() {
         tblBooking = FXCollections.observableArrayList();
         tblCurrentTureselected = FXCollections.observableArrayList();
         tblTruckTrailer = FXCollections.observableArrayList();
         lstCurrentTurs = FXCollections.observableArrayList();
-        mockDataPlanningList();
+
+        // Call individual methods to populate the lists with mock data
+        mockDataBookingList();
+        mockDataCurrentTripBooking();
+        mockDataTruckTrailerList();
+        mockDataCurrentTursList();
     }
 
     public ObservableList<Booking> getBooking() {
@@ -44,17 +48,18 @@ public class PlanningModel {
         return lstCurrentTurs;
     }
 
-    public void mockDataPlanningList() {
+    // Method to mock data for tblBooking
+    public void mockDataBookingList() {
         tblBooking.add(
                 new Booking(
                         1,
                         "Holst Sørensen",
                         "Traktor Hallen",
-                        LocalDate.of(2024, 2, 12),  // Convert the date to LocalDate
+                        LocalDate.of(2024, 2, 12),
                         2544,
                         "NL",
                         "Brdr Holst Sørensen Ribe",
-                        LocalDate.of(2025, 2, 14),  // Convert the date to LocalDate
+                        LocalDate.of(2025, 2, 14),
                         6760,
                         "NL",
                         24000.00,
@@ -62,17 +67,54 @@ public class PlanningModel {
                         9800.00
                 )
         );
+        tblBooking.add(
+                new Booking(
+                        2,
+                        "John Doe",
+                        "Warehouse A",
+                        LocalDate.of(2024, 3, 15),
+                        8000,
+                        "DK",
+                        "Transport Co.",
+                        LocalDate.of(2025, 3, 18),
+                        5000,
+                        "DK",
+                        15000.00,
+                        20,
+                        9500.00
+                )
+        );
+        tblBooking.add(
+                new Booking(
+                        3,
+                        "Anna Schmidt",
+                        "Port B",
+                        LocalDate.of(2024, 5, 1),
+                        3000,
+                        "DE",
+                        "Logistics GmbH",
+                        LocalDate.of(2025, 5, 5),
+                        5000,
+                        "DE",
+                        22000.00,
+                        15,
+                        11000.00
+                )
+        );
+    }
 
+    // Method to mock data for tblCurrentTureselected
+    public void mockDataCurrentTripBooking() {
         tblCurrentTureselected.add(
                 new Booking(
                         1,
                         "Holst Sørensen",
                         "Traktor Hallen",
-                        LocalDate.of(2024, 2, 12),  // Convert the date to LocalDate
+                        LocalDate.of(2024, 2, 12),
                         2544,
                         "NL",
                         "Brdr Holst Sørensen Ribe",
-                        LocalDate.of(2025, 2, 14),  // Convert the date to LocalDate
+                        LocalDate.of(2025, 2, 14),
                         6760,
                         "NL",
                         24000.00,
@@ -80,18 +122,51 @@ public class PlanningModel {
                         9800.00
                 )
         );
+        tblCurrentTureselected.add(
+                new Booking(
+                        2,
+                        "John Doe",
+                        "Warehouse A",
+                        LocalDate.of(2024, 3, 15),
+                        8000,
+                        "DK",
+                        "Transport Co.",
+                        LocalDate.of(2025, 3, 18),
+                        5000,
+                        "DK",
+                        15000.00,
+                        20,
+                        9500.00
+                )
+        );
+    }
 
+    // Method to mock data for tblTruckTrailer
+    public void mockDataTruckTrailerList() {
         tblTruckTrailer.add(
                 new TruckTrailer(
                         "AD12344",
                         "AD7567"
                 )
         );
-
-        lstCurrentTurs.add(
-                new Trip(1
+        tblTruckTrailer.add(
+                new TruckTrailer(
+                        "AB56789",
+                        "XY23456"
+                )
+        );
+        tblTruckTrailer.add(
+                new TruckTrailer(
+                        "XY67890",
+                        "AD12345"
                 )
         );
     }
 
+    // Method to mock data for lstCurrentTurs
+    public void mockDataCurrentTursList() {
+        lstCurrentTurs.add(new Trip(1));
+        lstCurrentTurs.add(new Trip(2));
+        lstCurrentTurs.add(new Trip(3));
+    }
 }
