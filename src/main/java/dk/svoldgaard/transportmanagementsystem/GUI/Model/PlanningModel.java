@@ -3,6 +3,7 @@ package dk.svoldgaard.transportmanagementsystem.GUI.Model;
 // project import
 
 import dk.svoldgaard.transportmanagementsystem.BE.Booking;
+import dk.svoldgaard.transportmanagementsystem.BE.TruckTrailer;
 
 // Java import
 import javafx.collections.FXCollections;
@@ -13,15 +14,27 @@ import java.time.LocalDate;
 public class PlanningModel {
 
     private ObservableList<Booking> tblBooking;
+    private ObservableList<Booking> tblCurrentTureselected;
+    private ObservableList<TruckTrailer> tblTruckTrailer;
 
 
     public PlanningModel() {
         tblBooking = FXCollections.observableArrayList();
+        tblCurrentTureselected = FXCollections.observableArrayList();
+        tblTruckTrailer = FXCollections.observableArrayList();
         mockDataPlanningList();
     }
 
     public ObservableList<Booking> getBooking() {
         return tblBooking;
+    }
+
+    public ObservableList<Booking> getCurrentTripBooking() {
+        return tblCurrentTureselected;
+    }
+
+    public ObservableList<TruckTrailer> getTruckTrailer() {
+        return tblTruckTrailer;
     }
 
     public void mockDataPlanningList() {

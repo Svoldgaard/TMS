@@ -17,6 +17,8 @@ import java.util.ResourceBundle;
 
 public class PlanningController implements Initializable {
 
+
+
     // JavaFx instance
 
     // all regarding current tures
@@ -58,10 +60,38 @@ public class PlanningController implements Initializable {
     // all regarding current tures Selected
     @FXML
     private TableView tblCurrentTureselected;
+    @FXML
+    private TableColumn colPlanedBookingNr;
+    @FXML
+    private TableColumn colPlanedClint;
+    @FXML
+    private TableColumn colPlanedLoadingPlace;
+    @FXML
+    private TableColumn colPlanedLoadingday;
+    @FXML
+    private TableColumn colPlanedDeliveryPlace;
+    @FXML
+    private TableColumn colPlanedDeliveryDate;
+    @FXML
+    private TableColumn colPlanedZip;
+    @FXML
+    private TableColumn colPlanedDeliveryZip;
+    @FXML
+    private TableColumn colPlanedWeight;
+    @FXML
+    private TableColumn colPlanedCllAmount;
+    @FXML
+    private TableColumn colPlanedLoadingMeter;
+    @FXML
+    private TableColumn colPlanedPrice;
 
     // all regarding truck & Trailer
     @FXML
     private TableView tblTruckTrailer;
+    @FXML
+    private TableColumn colTruck;
+    @FXML
+    private TableColumn colTrailer;
 
     // all other instances
 
@@ -74,6 +104,7 @@ public class PlanningController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        // Current Bookings
         colBookingNr.setCellValueFactory(new PropertyValueFactory<>("bookingNumber"));
         colClint.setCellValueFactory(new PropertyValueFactory<>("client"));
         colLoadingPlace.setCellValueFactory(new PropertyValueFactory<>("loadingPlace"));
@@ -89,8 +120,31 @@ public class PlanningController implements Initializable {
         colLoadingMeter.setCellValueFactory(new PropertyValueFactory<>("loadingMeter"));
         colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
 
-
         tblBooking.setItems(planningModel.getBooking());
+
+        // Bookings on trip
+
+        colPlanedBookingNr.setCellValueFactory(new PropertyValueFactory<>("bookingNumber"));
+        colPlanedClint.setCellValueFactory(new PropertyValueFactory<>("client"));
+        colPlanedLoadingPlace.setCellValueFactory(new PropertyValueFactory<>("loadingPlace"));
+        colPlanedLoadingday.setCellValueFactory(new PropertyValueFactory<>("loadingDate"));
+        colPlanedDeliveryPlace.setCellValueFactory(new PropertyValueFactory<>("deliveryPlace"));
+        colPlanedDeliveryDate.setCellValueFactory(new PropertyValueFactory<>("deliveryDate"));
+        colPlanedDeliveryZip.setCellValueFactory(new PropertyValueFactory<>("deliveryZipCode"));
+        colPlanedWeight.setCellValueFactory(new PropertyValueFactory<>("weight"));
+        colPlanedCllAmount.setCellValueFactory(new PropertyValueFactory<>("cllAmount"));
+        colPlanedLoadingMeter.setCellValueFactory(new PropertyValueFactory<>("loadingMeter"));
+        colPlanedPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
+
+        tblCurrentTureselected.setItems(planningModel.getCurrentTripBooking()); // this has to be changed when all is set up correct
+
+
+        // Truck & Trailer
+
+        colTruck.setCellValueFactory(new PropertyValueFactory<>("truckPlate"));
+        colTrailer.setCellValueFactory(new PropertyValueFactory<>("trailerPlate"));
+
+        tblTruckTrailer.setItems(planningModel.getTruckTrailer());
 
     }
     @FXML

@@ -11,26 +11,26 @@
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.svoldgaard.transportmanagementsystem.GUI.Controller.PlanningController">
    <bottom>
        <HBox prefHeight="250.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-           <TableView fx:id="tblTruckTrailer" prefHeight="250.0" prefWidth="221.0">
+           <TableView fx:id="tblTruckTrailer" prefHeight="250.0" prefWidth="191.0">
                <columns>
-                   <TableColumn prefWidth="75.0" text="truck" />
-                   <TableColumn prefWidth="75.0" text="Trailer" />
+                   <TableColumn fx:id="colTruck" prefWidth="75.0" text="truck" />
+                   <TableColumn fx:id="colTrailer" prefWidth="75.0" text="Trailer" />
                </columns>
            </TableView>
-           <TableView fx:id="tblCurrentTureselected" prefHeight="250.0" prefWidth="807.0">
+           <TableView fx:id="tblCurrentTureselected" prefHeight="250.0" prefWidth="785.0">
                <columns>
-                   <TableColumn prefWidth="75.0" text="Booking Number" />
-                   <TableColumn prefWidth="75.0" text="Clint" />
-                   <TableColumn prefWidth="48.0" text="Loading Place" />
-                   <TableColumn prefWidth="50.0" text="Loading day" />
-                   <TableColumn prefWidth="72.0" text="Delivery place" />
-                   <TableColumn prefWidth="68.0" text="delivery date" />
-                   <TableColumn prefWidth="63.0" text="zip" />
-                   <TableColumn prefWidth="35.46185302734375" text="country" />
-                   <TableColumn prefWidth="62.842529296875" text="weight" />
-               <TableColumn prefWidth="75.0" text="PLL" />
-               <TableColumn prefWidth="37.1976318359375" text="LDM" />
-               <TableColumn prefWidth="112.80242919921875" text="Price" />
+                   <TableColumn fx:id="colPlanedBookingNr" prefWidth="75.0" text="Booking Number" />
+                   <TableColumn fx:id="colPlanedClint" prefWidth="75.0" text="Clint" />
+                   <TableColumn fx:id="colPlanedLoadingPlace" prefWidth="48.0" text="Loading Place" />
+                   <TableColumn fx:id="colPlanedLoadingday" prefWidth="50.0" text="Loading day" />
+                   <TableColumn fx:id="colPlanedDeliveryPlace" prefWidth="72.0" text="Delivery place" />
+                   <TableColumn fx:id="colPlanedDeliveryDate" prefWidth="68.0" text="delivery date" />
+                   <TableColumn fx:id="colPlanedZip" prefWidth="63.0" text="zip" />
+                   <TableColumn fx:id="colPlanedDeliveryZip" prefWidth="35.46185302734375" text="country" />
+                   <TableColumn fx:id="colPlanedWeight" prefWidth="62.842529296875" text="weight" />
+               <TableColumn fx:id="colPlanedCllAmount" prefWidth="75.0" text="PLL" />
+               <TableColumn fx:id="colPlanedLoadingMeter" prefWidth="37.1976318359375" text="LDM" />
+               <TableColumn fx:id="colPlanedPrice" prefWidth="58.0" text="Price" />
                </columns>
            </TableView>
          <ListView fx:id="lstCurrentTurs" prefHeight="250.0" prefWidth="279.0" />
