@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="dk.svoldgaard.transportManagementsystem.Booking"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.svoldgaard.transportmanagementsystem.GUI.Controller.BookingController">
+    <Button layoutX="625.0" layoutY="555.0" mnemonicParsing="false" onAction="#btnSave" text="Save" />
+    <Button layoutX="678.0" layoutY="555.0" mnemonicParsing="false" onAction="#btnCancel" text="Cancel" />
+    <TableView fx:id="tblBookingData" layoutX="60.0" layoutY="341.0" prefHeight="200.0" prefWidth="675.0">
+      <columns>
+          <TableColumn fx:id="colMark" prefWidth="75.0" text="Mark" />
+          <TableColumn fx:id="colCllCount" prefWidth="75.0" text="Cll Count" />
+          <TableColumn fx:id="colPalletType" prefWidth="75.0" text="Pallet type" />
+          <TableColumn fx:id="colLength" prefWidth="75.0" text="Length" />
+          <TableColumn fx:id="colWeidth" prefWidth="75.0" text="Weidth" />
+          <TableColumn fx:id="colHeight" prefWidth="75.0" text="Height" />
+          <TableColumn fx:id="colWeight" prefWidth="75.0" text="Weight" />
+          <TableColumn fx:id="colM2" prefWidth="75.0" text="M2" />
+          <TableColumn fx:id="colLDM" prefWidth="75.0" text="LDM" />
+      </columns>
+    </TableView>
+    <TextField fx:id="txtClintName" layoutX="221.0" layoutY="84.0" promptText="Clint Name" />
+    <TextField fx:id="txtClintAdress" layoutX="221.0" layoutY="109.0" promptText="Clint Adress " />
+    <TextField fx:id="txtClintZipCode" layoutX="221.0" layoutY="134.0" promptText="zip code " />
+    <TextField fx:id="txtClintCity" layoutX="221.0" layoutY="159.0" promptText="City" />
+    <TextField fx:id="txtLoadingPlace" layoutX="409.0" layoutY="84.0" promptText="Loading Place" />
+    <TextField fx:id="txtLoadingAdress" layoutX="409.0" layoutY="109.0" promptText="Loading Adress " />
+    <TextField fx:id="txtLoadingZipCode" layoutX="409.0" layoutY="134.0" promptText="zip Code " />
+    <TextField fx:id="txtLoadingCity" layoutX="409.0" layoutY="159.0" promptText="City" />
+    <TextField fx:id="txtDeliveryPlace" layoutX="221.0" layoutY="216.0" promptText="Delivery Place " />
+    <TextField fx:id="txtDeliveryAdress" layoutX="221.0" layoutY="241.0" promptText="Delivery Adress " />
+    <TextField fx:id="txtDeliveryZipCode" layoutX="221.0" layoutY="266.0" promptText="Zip Code " />
+    <TextField fx:id="txtDeliveryCity" layoutX="221.0" layoutY="288.0" promptText="City " />
+    <Button layoutX="221.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnCreateClint" text="Create Clint" />
+    <ListView fx:id="lstClint" layoutX="14.0" layoutY="84.0" prefHeight="228.0" prefWidth="200.0" />
+    <Label layoutX="14.0" layoutY="56.0" text="Clint's" />
+    <Label layoutX="221.0" layoutY="65.0" text="Clint Number:" />
+    <Label fx:id="lblClintNumber" layoutX="296.0" layoutY="65.0" />
+    <Button layoutX="19.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnAdd" text="+" />
+    <Button layoutX="20.0" layoutY="383.0" mnemonicParsing="false" onAction="#btnRemove" text="-" />
 </AnchorPane>
