@@ -2,6 +2,7 @@ package dk.svoldgaard.transportmanagementsystem.GUI.Controller;
 
 // project import
 import dk.svoldgaard.transportmanagementsystem.BE.Booking;
+import dk.svoldgaard.transportmanagementsystem.BE.Clint;
 import dk.svoldgaard.transportmanagementsystem.GUI.Model.BookingModel;
 
 // java import
@@ -63,11 +64,9 @@ public class BookingController implements Initializable {
     @FXML
     private TextField txtDeliveryCity;
 
-
-
     // listView
     @FXML
-    private ListView lstClint;
+    private ListView<Clint> lstClint;
 
     // Label
     @FXML
@@ -84,7 +83,9 @@ public class BookingController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+        // this set the lst for the clint
         lstClint.setItems(bookingModel.getClint());
+        tblBookingData.setItems(bookingModel.getTblBookingData());
 
     }
 
