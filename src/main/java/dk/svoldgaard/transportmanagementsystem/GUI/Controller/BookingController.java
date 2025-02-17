@@ -1,12 +1,15 @@
 package dk.svoldgaard.transportmanagementsystem.GUI.Controller;
 
+// project import
 import dk.svoldgaard.transportmanagementsystem.BE.Booking;
+import dk.svoldgaard.transportmanagementsystem.GUI.Model.BookingModel;
+
+// java import
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -70,12 +73,18 @@ public class BookingController implements Initializable {
     @FXML
     private Label lblClintNumber;
 
-    public BookingController(){
 
+    // other instances
+    private BookingModel bookingModel;
+
+    public BookingController(){
+        bookingModel = new BookingModel();
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        lstClint.setItems(bookingModel.getClint());
 
     }
 
