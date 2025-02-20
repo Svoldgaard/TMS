@@ -5,6 +5,7 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
@@ -37,14 +38,31 @@
        </HBox>
    </bottom>
    <top>
-       <HBox prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-           <Button mnemonicParsing="false" onAction="#btnBooking" text="Booking" />
-           <Button mnemonicParsing="false" onAction="#btnCMR" text="CMR" />
-           <Button mnemonicParsing="false" onAction="#btnLogOut" text="LogOut">
-              <HBox.margin>
-                  <Insets left="930.0" />
-              </HBox.margin>
-           </Button>
+       <HBox prefHeight="50.0" prefWidth="698.0" BorderPane.alignment="CENTER">
+         <HBox prefHeight="100.0" prefWidth="400.0">
+            <children>
+                 <Button mnemonicParsing="false" onAction="#btnBooking" text="Booking" />
+                 <Button mnemonicParsing="false" onAction="#btnCMR" text="CMR" />
+            </children>
+         </HBox>
+         <HBox prefHeight="100.0" prefWidth="400.0">
+            <children>
+               <TextField fx:id="txtSearch" prefWidth="300.0" promptText="Search:">
+                  <HBox.margin>
+                     <Insets left="30.0" top="10.0" />
+                  </HBox.margin>
+               </TextField>
+            </children>
+         </HBox>
+         <HBox prefHeight="100.0" prefWidth="400.0">
+            <children>
+                 <Button mnemonicParsing="false" onAction="#btnLogOut" text="LogOut">
+                    <HBox.margin>
+                        <Insets left="300.0" />
+                    </HBox.margin>
+                 </Button>
+            </children>
+         </HBox>
        </HBox>
    </top>
    <center>

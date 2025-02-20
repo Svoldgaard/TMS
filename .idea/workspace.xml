@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e17e5c0-f777-4d37-a8bb-f0cd562b9f47" name="Changes" comment="done some work in bookingCo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/BLL/LoginManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dk.svoldgaard/transportManagementsystem/CSS/StyleSheet.css" afterDir="false" />
+    <list default="true" id="8e17e5c0-f777-4d37-a8bb-f0cd562b9f47" name="Changes" comment="change so booking BE is updated to handel the fields in create Booking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/BE/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/BE/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Model/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Model/LoginModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Controller/PlanningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Controller/PlanningController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dk.svoldgaard/transportManagementsystem/FXML/Planning.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dk.svoldgaard/transportManagementsystem/FXML/Planning.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +124,7 @@
       <workItem from="1739779232492" duration="64000" />
       <workItem from="1739792628472" duration="2705000" />
       <workItem from="1739861669305" duration="1030000" />
-      <workItem from="1740054083835" duration="3163000" />
+      <workItem from="1740054083835" duration="5534000" />
     </task>
     <task id="LOCAL-00001" summary="most off GUI and some mockdata in first TableVIew">
       <option name="closed" value="true" />
@@ -185,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739779171649</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="change so booking BE is updated to handel the fields in create Booking">
+      <option name="closed" value="true" />
+      <created>1740058095258</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740058095258</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,14 +215,15 @@
     <MESSAGE value="Booking Fxml created with all fxid and startet on the coding for it" />
     <MESSAGE value="lstclint works in bookingFXML" />
     <MESSAGE value="done some work in bookingCo" />
-    <option name="LAST_COMMIT_MESSAGE" value="done some work in bookingCo" />
+    <MESSAGE value="change so booking BE is updated to handel the fields in create Booking" />
+    <option name="LAST_COMMIT_MESSAGE" value="change so booking BE is updated to handel the fields in create Booking" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Controller/PlanningController.java</url>
-          <line>162</line>
+          <line>161</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
