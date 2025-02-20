@@ -1,0 +1,48 @@
+
+
+what need to be done:
+
+// DB Stuff
+create the DB
+make the connection to DB
+Make the data go thru the layers
+show the data in the correct places
+create the login
+make it possible to save new data
+make it possible to update data
+
+-- Logic & Functions
+make so you can use drag and drop on the bookings to trailers and then it create a trip for the booking taken
+make so you can take multiple bookings at the same time
+make so the only are shown in the trips window after that have been planned
+make so there can be created a CMR
+make so it can be printed to a PDF
+
+-- Styling & CSS
+make the style for the project more nice
+maybe make so people can set color to make some info be a warning
+make user be abel to change the style color for there program
+
+
+
+-- extra features
+
+make it possible to handel invoices and transaction and money thru the system
+make it possible to kpi
+make it possible to make so you can check statistic on the customer and the profit & lose on the clint
+make it possible to check the economic on a haulier (truck & Trailer) via trips profit & lose
+make it possible to check old bookings
+
+
+
+what is next:
+
+1) keep working on the DB
+2) make connection to DB
+3) make full crud
+4) Drag and Drop
+5) logic for booking and planned trips
+6) print options
+7) working on extra features
+
+
