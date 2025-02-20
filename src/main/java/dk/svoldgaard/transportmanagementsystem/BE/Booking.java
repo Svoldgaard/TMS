@@ -3,6 +3,7 @@ package dk.svoldgaard.transportmanagementsystem.BE;
 import java.time.LocalDate;
 
 public class Booking {
+
     private int bookingNumber;
     private String client;
     private String loadingPlace;
@@ -15,8 +16,16 @@ public class Booking {
     private String deliveryCountryCode;
     private Double weight;
     private int cllAmount;
-    private Double loadingMeter;
+    private Double loadingMeter;  // This is LDM
     private Double price;
+
+    // New Fields to match BookingController
+    private String mark;
+    private String palletType;
+    private int length;
+    private int width;
+    private int height;
+    private int m2;
 
     // Constructor
     public Booking(int bookingNumber, String client, String loadingPlace, LocalDate loadingDate, int loadingZipCode, String loadingCountryCode,
@@ -38,7 +47,17 @@ public class Booking {
         this.loadingMeter = loadingMeter;
     }
 
-
+    public Booking(int m2, int height, int width, int length, String palletType, String mark, Double loadingMeter, int cllAmount, Double weight) {
+        this.m2 = m2;
+        this.height = height;
+        this.width = width;
+        this.length = length;
+        this.palletType = palletType;
+        this.mark = mark;
+        this.loadingMeter = loadingMeter;
+        this.cllAmount = cllAmount;
+        this.weight = weight;
+    }
 
     public int getBookingNumber() {
         return bookingNumber;

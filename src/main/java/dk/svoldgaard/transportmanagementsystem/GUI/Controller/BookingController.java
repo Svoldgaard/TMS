@@ -10,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,23 +21,23 @@ public class BookingController implements Initializable {
     @FXML
     private TableView<Booking> tblBookingData;
     @FXML
-    private TableColumn colMark;
+    private TableColumn<Booking,String> colMark;
     @FXML
-    private TableColumn colCllCount;
+    private TableColumn<Booking,Integer> colCllCount;
     @FXML
-    private TableColumn colPalletType;
+    private TableColumn<Booking, String> colPalletType;
     @FXML
-    private TableColumn colLength;
+    private TableColumn<Booking,Integer> colLength;
     @FXML
-    private TableColumn colWeidth;
+    private TableColumn<Booking, Integer> colWeidth;
     @FXML
-    private TableColumn colHeight;
+    private TableColumn<Booking,Integer> colHeight;
     @FXML
-    private TableColumn colWeight;
+    private TableColumn<Booking, Double> colWeight;
     @FXML
-    private TableColumn colM2;
+    private TableColumn<Booking,Integer> colM2;
     @FXML
-    private TableColumn colLDM;
+    private TableColumn<Booking,Integer> colLDM;
 
     // all text Field
     @FXML
@@ -82,6 +83,18 @@ public class BookingController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        colMark.setCellValueFactory(new PropertyValueFactory<>("mark"));
+        colCllCount.setCellValueFactory(new PropertyValueFactory<>("cllAmount"));
+        colHeight.setCellValueFactory(new PropertyValueFactory<>("height"));
+        colWeidth.setCellValueFactory(new PropertyValueFactory<>("width"));
+        colLength.setCellValueFactory(new PropertyValueFactory<>("length"));
+        colWeight.setCellValueFactory(new PropertyValueFactory<>("weight"));
+        colLDM.setCellValueFactory(new PropertyValueFactory<>("loadingMeter")); // LDM is loadingMeter
+        colM2.setCellValueFactory(new PropertyValueFactory<>("m2"));
+
+        colPalletType.setCellValueFactory(new PropertyValueFactory<>("palletType"));
+
 
         // this set the lst for the clint
         lstClint.setItems(bookingModel.getClint());
