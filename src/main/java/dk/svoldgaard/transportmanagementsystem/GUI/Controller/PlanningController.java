@@ -159,6 +159,16 @@ public class PlanningController implements Initializable {
         // trips
         lstCurrentTurs.setItems(planningModel.getCurrentTurs());
 
+
+        // Search
+        txtSearch.textProperty().addListener((observable, oldValue, newValue) -> {
+            try{
+                planningModel.searchBooking(newValue);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        });
+
     }
     @FXML
     private void btnBooking(ActionEvent actionEvent) throws IOException {

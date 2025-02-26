@@ -7,12 +7,16 @@ import dk.svoldgaard.transportmanagementsystem.BE.TruckTrailer;
 import dk.svoldgaard.transportmanagementsystem.BE.Trip;
 
 // Java import
+import dk.svoldgaard.transportmanagementsystem.BLL.PlanningManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class PlanningModel {
+
+    private PlanningManager planningManager;
 
     private ObservableList<Booking> tblBooking;
     private ObservableList<Booking> tblCurrentTureselected;
@@ -20,6 +24,9 @@ public class PlanningModel {
     private ObservableList<Trip> lstCurrentTurs;
 
     public PlanningModel() {
+
+        planningManager = new PlanningManager();
+
         tblBooking = FXCollections.observableArrayList();
         tblCurrentTureselected = FXCollections.observableArrayList();
         tblTruckTrailer = FXCollections.observableArrayList();
@@ -31,6 +38,13 @@ public class PlanningModel {
         mockDataTruckTrailerList();
         mockDataCurrentTursList();
     }
+
+    public void searchBooking(String query){
+        List<Booking> searchResults = planningManager.searchMovies(query);
+        tblBooking.clear();
+        tblBooking.addAll(searchResults);
+    }
+
 
     public ObservableList<Booking> getBooking() {
         return tblBooking;
