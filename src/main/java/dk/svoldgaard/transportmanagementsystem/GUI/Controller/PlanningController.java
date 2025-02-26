@@ -4,6 +4,7 @@ package dk.svoldgaard.transportmanagementsystem.GUI.Controller;
 // project import
 import dk.svoldgaard.transportmanagementsystem.BE.Booking;
 import dk.svoldgaard.transportmanagementsystem.BE.Trip;
+import dk.svoldgaard.transportmanagementsystem.BE.TruckTrailer;
 import dk.svoldgaard.transportmanagementsystem.GUI.Model.PlanningModel;
 
 
@@ -20,6 +21,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 public class PlanningController implements Initializable {
@@ -68,39 +70,39 @@ public class PlanningController implements Initializable {
 
     // all regarding current tures Selected
     @FXML
-    private TableView tblCurrentTureselected;
+    private TableView<Booking> tblCurrentTureselected;
     @FXML
-    private TableColumn colPlanedBookingNr;
+    private TableColumn<Booking,Integer> colPlanedBookingNr;
     @FXML
-    private TableColumn colPlanedClint;
+    private TableColumn<Booking,String> colPlanedClint;
     @FXML
-    private TableColumn colPlanedLoadingPlace;
+    private TableColumn<Booking,String> colPlanedLoadingPlace;
     @FXML
-    private TableColumn colPlanedLoadingday;
+    private TableColumn<Booking, Date> colPlanedLoadingday;
     @FXML
-    private TableColumn colPlanedDeliveryPlace;
+    private TableColumn<Booking,String> colPlanedDeliveryPlace;
     @FXML
-    private TableColumn colPlanedDeliveryDate;
+    private TableColumn<Booking,Date> colPlanedDeliveryDate;
     @FXML
-    private TableColumn colPlanedZip;
+    private TableColumn<Booking,Integer> colPlanedZip;
     @FXML
-    private TableColumn colPlanedDeliveryZip;
+    private TableColumn<Booking,Integer> colPlanedDeliveryZip;
     @FXML
-    private TableColumn colPlanedWeight;
+    private TableColumn<Booking,Double> colPlanedWeight;
     @FXML
-    private TableColumn colPlanedCllAmount;
+    private TableColumn<Booking,Double> colPlanedCllAmount;
     @FXML
-    private TableColumn colPlanedLoadingMeter;
+    private TableColumn<Booking,Double> colPlanedLoadingMeter;
     @FXML
-    private TableColumn colPlanedPrice;
+    private TableColumn<Booking,Double> colPlanedPrice;
 
     // all regarding truck & Trailer
     @FXML
-    private TableView tblTruckTrailer;
+    private TableView<TruckTrailer> tblTruckTrailer;
     @FXML
-    private TableColumn colTruck;
+    private TableColumn<TruckTrailer,String> colTruck;
     @FXML
-    private TableColumn colTrailer;
+    private TableColumn<TruckTrailer,String> colTrailer;
 
     // all other instances
 

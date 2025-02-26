@@ -48,6 +48,5 @@ public class Search {
     private boolean compareToLoadingDate(String query, Booking booking) {
         return booking.getLoadingDate().toString().toLowerCase().contains(query.toLowerCase());
     }
-
-
+    
 }
