@@ -1,0 +1,52 @@
+/* Background */
+.root {
+    -fx-background-color: #2c3e50; /* Dark blue-gray */
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: #3498db; /* Blue */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9; /* Darker blue */
+}
+
+/* TextField Styling */
+.text-field {
+    -fx-background-color: #ecf0f1; /* Light gray */
+    -fx-text-fill: #2c3e50; /* Dark text */
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-border-color: #3498db;
+    -fx-border-radius: 5px;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: #34495e; /* Dark blue-gray */
+    -fx-border-color: #2980b9;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #2980b9; /* Header background */
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #2c3e50;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #d5dbdb; /* Alternating row color */
+}

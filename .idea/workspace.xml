@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e17e5c0-f777-4d37-a8bb-f0cd562b9f47" name="Changes" comment="have done something to get search to work">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/BLL/Util/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/BLL/Util/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Controller/PlanningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/svoldgaard/transportmanagementsystem/GUI/Controller/PlanningController.java" afterDir="false" />
+    <list default="true" id="8e17e5c0-f777-4d37-a8bb-f0cd562b9f47" name="Changes" comment="Minor changes to the instances fieds for the list view and tableview">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dk.svoldgaard/transportManagementsystem/CSS/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dk.svoldgaard/transportManagementsystem/CSS/StyleSheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,6 @@
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/majkensvoldgaard/Desktop/Jave projects/TransportManagementSystem&quot;,
@@ -125,7 +124,8 @@
       <workItem from="1739861669305" duration="1030000" />
       <workItem from="1740054083835" duration="6775000" />
       <workItem from="1740126720520" duration="202000" />
-      <workItem from="1740599394626" duration="2787000" />
+      <workItem from="1740599394626" duration="4410000" />
+      <workItem from="1740859970849" duration="750000" />
     </task>
     <task id="LOCAL-00001" summary="most off GUI and some mockdata in first TableVIew">
       <option name="closed" value="true" />
@@ -215,7 +215,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740601597494</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Minor changes to the instances fieds for the list view and tableview">
+      <option name="closed" value="true" />
+      <created>1740602222534</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740602222534</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Minor changes to the instances fieds for the list view and tableview">
+      <option name="closed" value="true" />
+      <created>1740602235297</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1740602235297</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +260,8 @@
     <MESSAGE value="Small changes in the FXML and controller" />
     <MESSAGE value="future plan for the project" />
     <MESSAGE value="have done something to get search to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="have done something to get search to work" />
+    <MESSAGE value="Minor changes to the instances fieds for the list view and tableview" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes to the instances fieds for the list view and tableview" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

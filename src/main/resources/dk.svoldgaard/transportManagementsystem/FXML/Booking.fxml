@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.svoldgaard.transportmanagementsystem.GUI.Controller.BookingController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../CSS/StyleSheet.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.svoldgaard.transportmanagementsystem.GUI.Controller.BookingController">
     <Button layoutX="625.0" layoutY="555.0" mnemonicParsing="false" onAction="#btnSave" text="Save" />
     <Button layoutX="678.0" layoutY="555.0" mnemonicParsing="false" onAction="#btnCancel" text="Cancel" />
     <TableView fx:id="tblBookingData" layoutX="60.0" layoutY="341.0" prefHeight="200.0" prefWidth="675.0">
